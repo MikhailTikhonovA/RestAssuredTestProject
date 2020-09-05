@@ -1,0 +1,80 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1599322634.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "confirmed",
+      "recovered",
+      "critical",
+      "deaths",
+      "lastChange",
+      "lastUpdate"
+    ],
+    "properties": {
+      "confirmed": {
+        "$id": "#root/items/confirmed",
+        "title": "Confirmed",
+        "type": "integer",
+        "examples": [
+          26966035
+        ],
+        "default": 0
+      },
+      "recovered": {
+        "$id": "#root/items/recovered",
+        "title": "Recovered",
+        "type": "integer",
+        "examples": [
+          19023087
+        ],
+        "default": 0
+      },
+      "critical": {
+        "$id": "#root/items/critical",
+        "title": "Critical",
+        "type": "integer",
+        "examples": [
+          60879
+        ],
+        "default": 0
+      },
+      "deaths": {
+        "$id": "#root/items/deaths",
+        "title": "Deaths",
+        "type": "integer",
+        "examples": [
+          887660
+        ],
+        "default": 0
+      },
+      "lastChange": {
+        "$id": "#root/items/lastChange",
+        "title": "Lastchange",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "2020-09-05T18:07:43+02:00"
+        ],
+        "pattern": "^.*$"
+      },
+      "lastUpdate": {
+        "$id": "#root/items/lastUpdate",
+        "title": "Lastupdate",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "2020-09-05T18:15:03+02:00"
+        ],
+        "pattern": "^.*$"
+      }
+    }
+  }
+
+}
